@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import News from './react-component/News';
+import SearchBar from './react-component/SearchBar';
+import MarketingBanner from './react-component/MarketingBanner';
+import Widgets from './react-component/Widgets';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      <div>
+        <News />
+      </div>
+      <div>
+        <SearchBar />
+      </div>
+      <div>
+        <MarketingBanner />
+      </div>
+      <div>
+        <Widgets />
+      </div>
     </div>
   );
 }
